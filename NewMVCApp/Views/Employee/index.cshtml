@@ -1,0 +1,48 @@
+<div class="container mt-5">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-center mb-4 text-primary">Nhập Thông Tin Person</h2>
+        <form method="post" asp-action="Index" asp-controller="Employee">
+            <!-- ID -->
+            <div class="mb-3">
+                <label for="id" class="form-label fw-bold">ID</label>
+                <input type="text" class="form-control" id="id" name="EmployeeId" placeholder="Nhập ID" required>
+            </div>
+
+            <!-- Full Name -->
+            <div class="mb-3">
+                <label for="fullname" class="form-label fw-bold">Full Name</label>
+                <input type="text" class="form-control" id="fullname" name="Fullname" placeholder="Nhập họ và tên" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="age" class="form-label fw-bold">Age</label>
+                <input type="text" class="form-control" id="age" name="Age" placeholder="Nhập họ và tên" required>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3">
+                <label for="address" class="form-label fw-bold">Address</label>
+                <textarea class="form-control" id="address" name="Address" placeholder="Nhập địa chỉ" rows="3" required></textarea>
+            </div>
+
+            <!-- Button Submit -->
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Gửi Thông Tin</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="card shadow-lg p-4">
+        <div class="card-body text-center">
+            <h3 class="card-title text-primary fw-bold">Thông Tin Person</h3>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    @ViewBag.inforEmployee;
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+</div>

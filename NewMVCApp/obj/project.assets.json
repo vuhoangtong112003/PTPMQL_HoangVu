@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project-FE-beginer\\PTPMHT_Vu\\NewMVCApp\\NewMVCApp.csproj",
+      "projectUniqueName": "D:\\Project-FE-beginer\\vu\\NewMVCApp\\NewMVCApp.csproj",
       "projectName": "NewMVCApp",
-      "projectPath": "D:\\Project-FE-beginer\\PTPMHT_Vu\\NewMVCApp\\NewMVCApp.csproj",
+      "projectPath": "D:\\Project-FE-beginer\\vu\\NewMVCApp\\NewMVCApp.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Project-FE-beginer\\PTPMHT_Vu\\NewMVCApp\\obj\\",
+      "outputPath": "D:\\Project-FE-beginer\\vu\\NewMVCApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
