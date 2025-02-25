@@ -1,0 +1,28 @@
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg p-4">
+                <h3 class="text-center text-primary">Tạo hóa đơn</h3>
+                
+                <form asp-action="Index" asp-controller="HoaDon" method="post">
+                    <div class="mb-3">
+                        <label for="unitPrice" class="form-label">Đơn giá (VNĐ):</label>
+                        <input type="number" id="unitPrice" name="DonGia" class="form-control" step="0.01" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Số lượng:</label>
+                        <input type="number" id="quantity" name="SoLuong" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Tính hóa đơn</button>
+                </form>
+
+                    <div class="mt-4 text-center">
+                        <h4>Thành tiền: <span class="fw-bold text-success">@ViewBag.HoaDon VNĐ</span></h4>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

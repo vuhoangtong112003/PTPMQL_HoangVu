@@ -1,0 +1,31 @@
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg p-4">
+                <h3 class="text-center text-primary">Tính chỉ số BMI</h3>
+                
+                <form asp-action="Index" asp-controller="BMI" method="post">
+                    <div class="mb-3">
+                        <label for="weight" class="form-label">Cân nặng (kg):</label>
+                        <input type="text" id="weight" name="cannang" class="form-control" placeholder="Nhập cân nặng" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="height" class="form-label">Chiều cao (cm):</label>
+                        <input type="text" id="height" name="chieucao" class="form-control" placeholder="Nhập chiều cao" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Tính BMI</button>
+                </form>
+
+
+                    <div class="mt-4 text-center">
+                        <h4>Kết quả: <span class="fw-bold">@ViewBag.BMI</span></h4>
+                        <p class="fw-bold text-uppercase text-primary">@ViewBag.Category</p>
+                    </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
